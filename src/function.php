@@ -34,3 +34,11 @@ function task3($rows, $cols)
         echo '</tr>';
     }
 }
+
+function task4()
+{
+    echo date('d.m.Y H:i');
+    echo '<br>';
+    echo mktime( 00, 00, 00, 2, 24, 2016);
+    echo '<br>';
+}
