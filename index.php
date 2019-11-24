@@ -20,3 +20,6 @@ task2('+', 1, 2, 3, 5.2);
 task4();
 
 task5();
+
+file_put_contents('text.txt', 'Hello again!');
+task6('text.txt');

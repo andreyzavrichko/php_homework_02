@@ -62,3 +62,8 @@ function task5()
     echo str_replace('У', '', $string4);
     echo '<br>';
 }
+
+function task6(string $file_name)
+{
+    echo file_get_contents($file_name);
+}
