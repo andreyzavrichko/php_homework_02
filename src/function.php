@@ -10,7 +10,8 @@ function task1($array, $parameter)
     }
 }
 
-function task2(...$args) {
+function task2(...$args)
+{
     if(!isset($args)){
         echo 'Отсутствуют аргументы!';
         return;
@@ -21,4 +22,15 @@ function task2(...$args) {
     eval('$result = '. $str . ';');
     echo $str . '=' . $result;
     echo '<br>';
+}
+
+function task3($rows, $cols)
+{
+    for ($i = 1; $i <= $rows; $i++){
+        echo '<tr>';
+        for ($e = 1; $e <= $cols; $e++){
+            echo '<td align="center">' . $i * $e . '</td>';
+        }
+        echo '</tr>';
+    }
 }
