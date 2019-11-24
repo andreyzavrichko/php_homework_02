@@ -9,3 +9,16 @@ function task1($array, $parameter)
         }
     }
 }
+
+function task2(...$args) {
+    if(!isset($args)){
+        echo 'Отсутствуют аргументы!';
+        return;
+    }
+    $operator = array_shift($args);
+
+    $str = implode($operator, $args);
+    eval('$result = '. $str . ';');
+    echo $str . '=' . $result;
+    echo '<br>';
+}
