@@ -42,3 +42,23 @@ function task4()
     echo mktime( 00, 00, 00, 2, 24, 2016);
     echo '<br>';
 }
+
+function task5()
+{
+    echo $string = 'Карл у Клары украл Корралы';
+    echo '<br>';
+    echo str_replace('К', '', $string);
+    echo '<br>';
+    echo $string2 = 'Две бутылки лимонада';
+    echo '<br>';
+    echo str_replace('Две', 'Три', $string2);
+    echo '<br>';
+    echo $string3 = 'Сорок два солдата';
+    echo '<br>';
+    echo str_replace('два', 'четыре', $string3);
+    echo '<br>';
+    echo $string4 = 'Удалить';
+    echo '<br>';
+    echo str_replace('У', '', $string4);
+    echo '<br>';
+}
