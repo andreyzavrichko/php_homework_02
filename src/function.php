@@ -1,11 +1,11 @@
 <?php
-function task1($array, $parameter)
+function task1($arrayString, $concat)
 {
-    if ($parameter) {
-        return implode(' ', $array);
+    if ($concat) {
+        return implode(' ', $arrayString);
     } else {
-        foreach ($array as $value) {
-            echo "<p>$value</p>";
+        foreach ($arrayString as $string) {
+            echo "<p>$string</p>";
         }
     }
 }
